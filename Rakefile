@@ -46,6 +46,7 @@ Rake::TestTask.new(:base_test) do |t|
   t.ruby_opts = ["-Eascii-8bit:ascii-8bit"]
 
   puts nil, '<============================================================ OUTPUT START HERE'
+  p Encoding.default_external
   puts ENV['LANG']
   puts '<============================================================ OUTPUT CLOSE HERE', nil
 end
