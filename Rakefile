@@ -44,6 +44,10 @@ Rake::TestTask.new(:base_test) do |t|
   t.verbose = true
   t.warning = true
   t.ruby_opts = ["-Eascii-8bit:ascii-8bit"]
+
+  puts nil, '<============================================================ OUTPUT START HERE'
+  puts ENV['LANG']
+  puts '<============================================================ OUTPUT CLOSE HERE', nil
 end
 
 task :parallel_test do
